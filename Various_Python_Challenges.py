@@ -39,7 +39,6 @@ with open(name_imagen, 'wb') as handler:
 
 #Replace a specific word with another
 import re
-
 text = "Hola Mundo"
 re.sub("Hola","Hi",text)
 
