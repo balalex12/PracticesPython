@@ -1,3 +1,5 @@
+#AUTHOR: BY BALALEX12
+
 import requests
 
 def convert_currency():    
@@ -35,3 +37,6 @@ def convert_currency():
             print("Error: Rates were not obtained from the API.")
         
 convert_currency()
+
+
+#AUTHOR: BY BALALEX12
