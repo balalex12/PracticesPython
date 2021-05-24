@@ -39,4 +39,4 @@ def convert_currency():
 convert_currency()
 
 
-#AUTHOR: BY BALALEX12
+#QVVUSE9SOiBCWSBCQUxBTEVYMTI=
