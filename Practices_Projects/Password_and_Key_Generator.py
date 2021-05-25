@@ -8,6 +8,7 @@ on how the user needs it.
 import random
 import string
 import os 
+import subprocess
 
 #This method is responsible for cleaning the terminal 
 def terminal_cleaning():
@@ -18,9 +19,16 @@ def terminal_cleaning():
 
 #This method will generate the keys or passwords that the user wants.
 def generator():
+    who = subprocess.getoutput("whoami")
+    
+    
+
     terminal_cleaning() 
     generated = []
     result = ""
+    replace = who.replace("\\"," ")
+    user = replace.split()[-1]
+    print("*** Hi "+user+", welcome to the password generator! ***\n\n")
     op = input("What do you want to generate? \na) Password\nb) Numeric Key\nEnter: ")
     
     if len(op) == 1:
